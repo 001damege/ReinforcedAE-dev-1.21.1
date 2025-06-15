@@ -14,10 +14,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import reinforcedae.init.ModBlock;
-import reinforcedae.init.ModBlockEntity;
-import reinforcedae.init.ModCreativeTab;
-import reinforcedae.init.ModItem;
+import reinforcedae.init.*;
 
 import java.util.List;
 
@@ -31,10 +28,12 @@ public final class ReinforcedAE {
 
     public ReinforcedAE(IEventBus eventBus, ModContainer mod) {
         eventBus.addListener(ReinforcedAE::initUpgrades);
+        eventBus.addListener(ReinforcedAE::initCapabilities);
         ModItem.DR.register(eventBus);
         ModCreativeTab.DR.register(eventBus);
         ModBlock.DR.register(eventBus);
         ModBlockEntity.DR.register(eventBus);
+        ModComponent.DR.register(eventBus);
     }
 
     public static ResourceLocation makeId(String path) {

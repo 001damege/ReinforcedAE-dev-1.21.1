@@ -4,7 +4,8 @@ import guideme.internal.data.LocalizationEnum;
 import reinforcedae.ReinforcedAE;
 
 public enum ModTranlation implements LocalizationEnum {
-    ModName("ReinforcedAE", "gui")
+    ModName("ReinforcedAE", "gui"),
+    AcceleratorThreads("Provides 262144 co-processing threads per block."),
     ;
 
     private final String englishText;
