@@ -13,7 +13,7 @@ public enum ReinforceCraftingUnitType implements ICraftingUnitType {
     STORAGE_8192M(8192, "8192m_storage", 0),
     STORAGE_32768M(32768, "32768m_storage", 0),
     STORAGE_131072M(131072, "131072m_storage", 0),
-    STORAGE_CREATIVE(1048576, "creative_storage", 0),
+    STORAGE_CREATIVE(134217728, "creative_storage", 0),
     UNIT(0, "unit", 0),
     ACCELERATOR(0, "accelerator", 131072);
 
