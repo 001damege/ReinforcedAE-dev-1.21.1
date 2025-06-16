@@ -20,7 +20,7 @@ public final class ModBlockEntity {
     public static final DeferredRegister<BlockEntityType<?>> DR = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, ReinforcedAE.MODID);
 
     public static final Supplier<BlockEntityType<CraftingBlockEntity>> CRAFTING_UNIT = create("reinforced_crafting_unit", CraftingBlockEntity.class, CraftingBlockEntity::new, ModBlock.CRAFTING_UNIT, ModBlock.CRAFTING_ACCELERATOR);
-    public static final Supplier<BlockEntityType<CraftingBlockEntity>> CRAFTING_STORAGE = create("reinforced_crafting_storage", CraftingBlockEntity.class, CraftingBlockEntity::new, ModBlock.STORAGE_1024M, ModBlock.STORAGE_2048M, ModBlock.STORAGE_8192M, ModBlock.STORAGE_32768M, ModBlock.STORAGE_131072M);
+    public static final Supplier<BlockEntityType<CraftingBlockEntity>> CRAFTING_STORAGE = create("reinforced_crafting_storage", CraftingBlockEntity.class, CraftingBlockEntity::new, ModBlock.STORAGE_1024M, ModBlock.STORAGE_2048M, ModBlock.STORAGE_8192M, ModBlock.STORAGE_32768M, ModBlock.STORAGE_131072M, ModBlock.STORAGE_CREATIVE);
 
     @SuppressWarnings("DataFlowIssue")
     @SafeVarargs

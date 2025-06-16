@@ -45,6 +45,7 @@ public final class ModBlock {
     public static final BlockDefinition<CraftingUnitBlock> STORAGE_8192M = block("8192M Crafting Storage", "8192m_crafting_storage", () -> new CraftingUnitBlock(ReinforceCraftingUnitType.STORAGE_8192M), CraftingBlockItem::new);
     public static final BlockDefinition<CraftingUnitBlock> STORAGE_32768M = block("32768M Crafting Storage", "32768m_crafting_storage", () -> new CraftingUnitBlock(ReinforceCraftingUnitType.STORAGE_32768M), CraftingBlockItem::new);
     public static final BlockDefinition<CraftingUnitBlock> STORAGE_131072M = block("131072M Crafting Storage", "131072m_crafting_storage", () -> new CraftingUnitBlock(ReinforceCraftingUnitType.STORAGE_131072M), CraftingBlockItem::new);
+    public static final BlockDefinition<CraftingUnitBlock> STORAGE_CREATIVE = block("Creative Crafting Storage", "creative_crafting_storage", () -> new CraftingUnitBlock(ReinforceCraftingUnitType.STORAGE_CREATIVE), CraftingBlockItem::new);
 
     private static <T extends Block> BlockDefinition<T> block(String englishName, String id, Supplier<T> blockSupplier, BiFunction<Block, Item.Properties, BlockItem> factory) {
         var block = DR.register(id, blockSupplier);
